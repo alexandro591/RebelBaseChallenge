@@ -1,0 +1,78 @@
+$link-color: rgb(0, 195, 255);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: $link-color;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.react-datepicker__input-container {
+  input {
+    font-size: 16px;
+    padding: 4px;
+    width: 130px;
+    height: 26px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+  }
+}
+
+svg {
+  pointer-events: none !important;
+  cursor: pointer !important;
+}
+
+.selected {
+  svg {
+    color: rgb(0, 181, 178) !important;
+  }
+  &svg {
+    color: rgb(0, 181, 178) !important;
+  }
+}
+
+.hideIfSelected {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.showIfNotSelected {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(43, 43, 43);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  margin: 50px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    margin: 40px !important;
+  }
+}
