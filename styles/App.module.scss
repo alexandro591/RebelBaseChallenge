@@ -59,7 +59,9 @@
 }
 
 .selectedTemplate {
+  transition: 0.5s;
   font-weight: bolder !important;
+  font-size: 15px !important;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.604),
     -2px -2px 5px rgba(0, 0, 0, 0.611) !important;
 }

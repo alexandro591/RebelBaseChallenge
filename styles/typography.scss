@@ -1,0 +1,12 @@
+$link-color: rgb(0, 195, 255);
+
+h1 {
+  margin: 40px !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: $link-color;
+  cursor: pointer;
+}
