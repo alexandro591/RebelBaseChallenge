@@ -1,34 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project was created in [Next.js](https://nextjs.org/) - React
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
+```
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tools used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Node v14.15.5
+- Next.js (React)
+- Sass
+- Public database created in firebase (read only) `"https://rebelbase-challenge-default-rtdb.firebaseio.com"`.
+- The website is build in a CI/CD environment where every branch and push request creates a website environment to test.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Structure
 
-## Learn More
+| Components                           | Description                                                                                  |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- |
+| ./Components/DragAndDropContainer.js | Contains a collection of scheduled items that can be draged and droped between them.         |
+| ./Components/MainApp.js              | Contains a collections of 1 or more Drag and drop components.                                |
+| ./Components/NavBar.js               | Navigation bar, contains the All button selector, as well as the selector for each template. |
+| ./Components/ScheduleItem            | An item that contains all the schedule information from a single template (label and date).  |
 
-To learn more about Next.js, take a look at the following resources:
+| pages                | Description                                                           |
+| -------------------- | --------------------------------------------------------------------- |
+| ./pages/\_app.js     | Project initialization file created by next.js                        |
+| ./pages/index.js     | Main app route                                                        |
+| ./pages/easterEgg.js | Easter egg route [click here](https://rebelbase.vercel.app/easterEgg) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| public                | Description          |
+| --------------------- | -------------------- |
+| ./public/deadpool.jpg | used in index.js     |
+| ./public/schedule.png | used in easterEgg.js |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| styles                   | Description                  |
+| ------------------------ | ---------------------------- |
+| ./styles/App.module.scss | Modular scss used in the app |
+| ./styles/element.scss    | Elements sass code           |
+| ./styles/global.scss     | Global sass                  |
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| root                | Description                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ |
+| ./environment       | Contains the enviroment to run the app (database url).                                                       |
+| ./package-lock.json | It describes the exact tree of npm dependencies that was generated                                           |
+| ./package.json      | Gives information to npm that allows it to identify the project as well as handle the project's dependencies |
