@@ -1,4 +1,4 @@
-import styles from "../styles/Global.module.scss";
+import styles from "../styles/App.module.scss";
 import { useEffect, useState } from "react";
 import { resetServerContext } from "react-beautiful-dnd";
 import "react-datepicker/dist/react-datepicker.css";

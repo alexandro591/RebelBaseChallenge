@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import styles from "../styles/Global.module.scss";
+import styles from "../styles/App.module.scss";
 import axios from "axios";
 import { databaseUrl } from "../environment";
 import NavBar from "../Components/NavBar";

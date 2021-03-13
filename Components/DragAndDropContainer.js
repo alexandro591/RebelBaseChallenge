@@ -1,4 +1,4 @@
-import styles from "../styles/Global.module.scss";
+import styles from "../styles/App.module.scss";
 import ScheduleItem from "./ScheduleItem";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import DatePicker from "react-datepicker";

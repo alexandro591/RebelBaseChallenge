@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/Global.module.scss";
+import styles from "../styles/App.module.scss";
 import { Button, Select, MenuItem } from "../Shared/Material";
 
 export default function NavBar(props) {
