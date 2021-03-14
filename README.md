@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Structure
 
-| Components                           | Description                                                                                                  |
+| File route                           | Description                                                                                                  |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | ./Components/DragAndDropContainer.js | Contains a collection of scheduled items that can be draged and droped between them.                         |
 | ./Components/MainApp.js              | Contains a collections of 1 or more Drag and drop components.                                                |
