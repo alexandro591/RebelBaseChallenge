@@ -37,6 +37,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | ./public/deadpool.jpg | used in index.js     |
 | ./public/schedule.png | used in easterEgg.js |
 
+| Shared                       | Description                                      |
+| ---------------------------- | ------------------------------------------------ |
+| ./Shared/Material/index.js   | Material components shared across the project.   |
+| ./Shared/ReactIcons/index.js | ReactIcons components shared across the project. |
+
 | styles                   | Description                  |
 | ------------------------ | ---------------------------- |
 | ./styles/App.module.scss | Modular scss used in the app |
