@@ -15,9 +15,10 @@ export default function MainApp(props) {
   useEffect(() => {
     const _dates = [];
     const _times = [];
-    setSelected([]);
+    const _selected = [];
     if (templates.length) {
-      templates[selectedTemplate]?.schedules?.forEach((schedule) => {
+      templates[selectedTemplate]?.schedules?.forEach((schedule, index) => {
+        _selected[index] = false;
         _dates.push(new Date(schedule.date));
         _times.push(
           new Date(schedule.date).toLocaleString("en-us", {
@@ -28,6 +29,8 @@ export default function MainApp(props) {
         );
       });
     }
+
+    setSelected(_selected);
     setDates([..._dates]);
     setTimes([..._times]);
   }, [selectedTemplate]);
